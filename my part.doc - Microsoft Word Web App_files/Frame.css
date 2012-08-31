@@ -1,0 +1,1001 @@
+﻿/* Base Styleshee for Frame.
+ * This will clear out all base properties to normalize the look across
+ * browsers */
+* 
+{
+	margin: 0;
+	padding: 0;
+}
+	
+div.WACFrame h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl
+{
+	margin: 0;
+	padding: 0;
+}
+
+div.WACFrame li, dd, blockquote
+{
+	margin-left: 0;
+}
+
+div.WACFrame label
+{
+	cursor: pointer;
+}
+
+div.WACFrame fieldset
+{
+	border: none;
+}
+
+div.WACFrame input, textarea
+{
+	font-size: 100%;
+}
+
+div.WACFrame
+{
+	border: none;
+	position:absolute;
+	height:100%;
+	width:100%;
+}
+
+div.WACInnerFrame
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 200px;
+	min-width: 500px;
+}
+
+/* Dialog Box CSS */
+.WACDialogOverlay
+{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 998;
+	width: 100%;
+	-ms-filter: "alpha(opacity=50)";
+	filter: alpha(opacity=50);
+	background: #fafcff;
+	opacity: .50;
+}
+
+.WACDialogOverlay.Invisible
+{
+	-ms-filter: "alpha(opacity=1)";
+	filter: alpha(opacity=1);
+	opacity: .01;
+}
+
+/* Dialog styles */
+.WACDialogButton
+{
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #000000;
+	margin-left: 8px;
+	vertical-align: middle;
+}
+
+.AppRtl .WACDialogButton
+{
+	text-align: left;
+	margin-left: 0px;
+	margin-right: 8px;
+}
+
+.WACDialogPanel
+{
+	display: none;
+	position: absolute;
+	border: 1px solid #93969d;
+	z-index: 999;
+	background-color: #f9f9f9;
+	min-width: 375px;
+}
+
+.WACDialogPanel.Window
+{
+	background-color: Window;
+}
+
+.AppRtl .WACDialogPanel
+{
+	direction: rtl;
+}
+
+.WACDialogTitleText
+{
+	overflow:hidden;
+}
+
+.WACDialogTitlePanel
+{
+	background-repeat: repeat-x;
+	background-position: top left;
+	color: #666d7c;
+	height: 1.5em;
+	border-bottom:1px solid #c4c9ce;
+	vertical-align: middle;
+	padding:2px 6px 0px 5px;
+	cursor: move;
+	position: relative;
+}
+
+.WACDialogTextPanel
+{
+	padding-left: 18px; 	
+	padding-right: 6px;	
+	padding-bottom: 6px;	
+	padding-top: 9px;
+	display: block;	
+	overflow:hidden;
+}
+
+.WACProgressTextPanel
+{
+	padding-left: 12px; 	
+	padding-right: 6px;	
+	padding-bottom: 11px;	
+	padding-top: 11px;
+	display: inline-block;	
+	overflow:hidden;
+	cursor:default !important;
+	vertical-align: middle;
+	max-width: 150px;
+}
+
+.AppRtl WACDialogTextPanel
+{
+	padding-right: 12px; 	
+	padding-left: 6px;	
+}
+
+a.WACDialogCloseAnchor, a.WACCalloutCloseAnchor
+{
+	cursor: default;
+	position: absolute;
+	top: 2px;
+	right: 3px;
+}
+
+.AppRtl a.WACDialogCloseAnchor
+{
+	right: auto;
+	left: 3px;
+}
+
+.WACDialogBodyPanel
+{
+	padding-left: 12px; 	
+	padding-right: 12px;	
+	padding-bottom: 18px;	
+	padding-top: 18px;	
+	color: #3b3b3b;
+	display: block;
+}
+
+.WACDialogIcon
+{
+	padding-left: 6px; 	
+	padding-right: 0px;	
+	padding-bottom: 6px;	
+	padding-top: 6px;
+	float: left;
+	width: 32px;
+	height: 32px;
+}
+
+.AppRtl .WACDialogIcon
+{
+	padding-right: 6px; 	
+	padding-left: 0px;	
+	float: right;
+}
+
+.WACDialogButtonPanel
+{
+	padding-bottom: 12px;
+	padding-right: 12px;
+	text-align: right;
+	float: right;
+}
+
+.AppRtl .WACDialogButtonPanel
+{
+	padding-right: 0px;
+	padding-left: 12px;
+	text-align: left;
+	float: left;
+}
+
+.WACDialogButtonNormal
+{
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	color: #000000;
+	margin-left: 8px;
+	vertical-align: middle;
+}
+
+.AppRtl .WACDialogButtonNormal
+{
+	margin-left: 0px;
+	margin-right: 8px;
+}
+
+.WACDialogHtmlPanel 
+{	
+	text-align:left;		
+	display: block;		
+}
+
+.AppRtl .WACDialogHtmlPanel 
+{	
+	text-align:right;		
+}
+
+.WACDialogLabel
+{ 
+	cursor:default !important;
+	margin-top: 4px;
+	margin-bottom:2px;   
+	display: block;
+}
+
+.WACStandardDialogLabel
+{
+	cursor:default !important;
+	display: block;
+}	
+
+.WACDialogInput 
+{ 
+	width:100%;
+	border:1px solid #c3cbd0;
+}
+
+.WACDialogCheckBox
+{
+	padding: 0px;
+	margin-left: 2px;
+	margin-right: 6px;
+	vertical-align: middle;
+}
+
+.AppRtl .WACDialogCheckBox
+{
+	margin-right: 2px;
+	margin-left: 6px;
+}
+
+.WACDialogRadio
+{
+	padding: 0px;
+	margin-left: 2px;
+	margin-right: 6px;
+	vertical-align: middle;
+}
+
+.AppRtl .WACDialogRadio
+{
+	margin-right: 2px;
+	margin-left: 6px;
+}
+
+.WACDialogCheckBoxDiv
+{
+	padding-top: 15px;
+}
+
+.WACDialogInputFile
+{	
+	width: 100%;
+	text-align:left;
+}
+
+.AppRtl .WACDialogInputFile
+{	
+	text-align:right;
+}
+
+.WACDialogRow  
+{	
+	position:relative;
+	padding-top:6px;	
+	padding-bottom:6px;	
+}
+
+.WACStandardDialogRow
+{
+	position:relative;
+}
+
+.WACProgressRow  
+{	
+	margin-left:6px;
+	margin-right:6px;
+	background: #f9f9f9;
+	display: block;
+}
+
+.WACIncrementalProgressRow  
+{	
+	margin-left:6px;
+	margin-right:6px;
+	display: block;
+}
+
+.WACProgressIcon 
+{
+	padding: 6px; 	
+	float: left;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+
+.AppRtl .WACProgressIcon 
+{
+	float: none;
+}
+
+.WACDialogError 
+{ 
+	float: none; 
+	display:none;
+	color:#ff0000;
+	width: 100%;
+}
+
+.WACProgressButtonSection
+{
+	padding-bottom: 12px;
+	padding-right: 12px;
+	float: right;
+}
+
+.AppRtl .WACProgressButtonSection
+{
+	padding-left: 12px;
+	padding-right: 0px;
+	float: left;
+}
+
+
+.WACAltTextInput
+{
+	width: 100%;
+	border:1px solid #c3cbd0;
+}
+
+.WACAltTextDialogRow
+{	
+}
+
+.WACDialogList 
+{
+	width:100%;
+	font-size: 1.0em;
+	color: #444444
+	border:1px solid #c3cbd0;
+}
+
+/* End of Dialog Box CSS */
+/* Light Weight progress CSS */
+.WACProgressText 
+{
+	padding-top: 11px;
+	padding-bottom: 11px;
+	padding-left: 12px;
+	padding-right: 12px;
+	vertical-align: middle;
+	color: #444444;
+	cursor:default !important;
+}
+
+.WACProgressImage
+{
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+
+.WACProgressSmallText 
+{
+	padding-top: 11px;
+	padding-left: 12px;
+	padding-right: 12px;
+	vertical-align: top;
+	color: #444444;
+	cursor:default !important;
+}
+
+.WACProgressSmallImage
+{
+	margin-right: 9px;
+	width: 16px;
+	height: 16px;
+}
+
+.AppRtl .WACProgressSmallImage
+{
+	margin-left: 9px;
+	margin-right: 0px;
+}
+
+/* End Light Weight progress CSS */
+
+/* Click to Run Dialogs */
+.WACDialogUList
+{
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+.WACC2RProducts
+{
+	display: block;
+	vertical-align: middle;
+	padding-left: 38px;
+	padding-right: 38px;
+	padding-bottom: 6px;
+	padding-top: 18px;
+}
+
+.WACC2RInstallInstruction
+{
+	max-width: 256px;
+	width: 256px;
+	padding-left: 6px;
+	padding-right: 6px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.WACC2RProgressIcon
+{
+	padding: 6px;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+}
+
+.WACC2RProgressTextPanel
+{
+	padding-left: 12px;
+	padding-right: 6px;
+	padding-bottom: 11px;
+	padding-top: 11px;
+	display: inline-block;
+	overflow:hidden;
+	cursor:default !important;
+	vertical-align: middle;
+}
+
+.AppRtl .WACC2RProgressTextPanel
+{
+	padding-left: 6px;
+	padding-right: 12px;
+}
+
+.WACC2RProgressRow
+{
+	margin-left:6px;
+	margin-right:6px;
+	display: block;
+	text-align: center;
+}
+
+.WACC2RProgressMessage
+{
+	padding-top: 64px;
+	padding-bottom: 6px;
+	padding-left: 18px;
+	padding-right: 18px;
+	text-align: center;
+}
+/* End Click to Run Dialogs */
+
+/* Error control */
+.WACErrorText 
+{
+	vertical-align: middle;
+	margin: 0px 82px 0px 82px;
+}
+
+.WACErrorImage
+{
+	margin-bottom: 23px;
+}
+/* End Error control */
+
+/* Business Bar and Notification Bar CSS */
+.WACNotificationBar
+{
+	z-index: 900;
+	position: absolute;
+	right: 32px;
+	text-align: right;
+	top: 2px;
+	height: 29px;
+}
+
+.AppRtl .WACNotificationBar
+{
+	right: auto;
+	left: 32px;
+	text-align: left;
+}
+
+.WACNotificationEntry
+{
+	border: 1px solid #b4a555;
+	color: #1f0000;
+	background-color:#fffce4;
+	float: left;
+	margin-left: 7px;
+	cursor: default;
+	vertical-align: top;
+	text-align: center;
+	min-width: 140px;
+}
+
+.WACNotificationImage
+{
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.WACNotificationMessage
+{
+	vertical-align: middle;
+}
+
+.WACNotificationBottomBar
+{
+	border-top: 4px solid #fff19d;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.WACBusinessBar
+{
+	display: block; 
+	background: #fff19d;
+	padding: 0px 0px 0px 0px;
+	margin-left: 0px; 
+	width: 100%;
+	position: absolute;
+	height:auto;
+}
+
+.WACBusinessBar, .WACBusinessBarBodyATag
+{
+	color: #1f0000;
+	cursor: default;
+	height:auto;
+}
+
+.WACBusinessBarEntry, .WACBusinessBarEntryActionable
+{
+	display: block;
+	width: 100%;
+	padding: 3px 0px 3px 0px;
+	border: 1px solid #b4a555;
+	border-top: none;
+	height:auto;
+}
+
+.WACBusinessBarBodyATag
+{
+	/* remove underlines */
+	text-decoration: none;
+}
+
+.WACBusinessBarButton
+{
+	border: 1px solid #b4a555;
+	background: #fef3b2;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-left: 15px;
+	margin-right: 0px;
+	padding-bottom: 1px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	cursor: default;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.AppRtl .WACBusinessBarButton
+{
+	margin-right: 15px;
+	margin-left: 0px;
+}
+
+.WACBusinessBarButton:hover
+{
+	background: #fffbe3;
+}
+
+.WACBusinessBarButton:active
+{
+	background: #f3e282;
+}
+
+.WACBusinessBar:first-child
+{
+	border:none;
+}
+
+.WACBusinessBarClose
+{
+	margin-right: 7px;
+	margin-top: 5px;
+	float: right;
+	cursor: pointer;
+}
+
+.AppRtl .WACBusinessBarClose
+{
+	margin-right: 0px;
+	margin-left: 7px;
+	float: left;
+}
+
+.IE7 .WACBusinessBarClose 
+{
+	/* IE7 pushes the close down, this would make sure it appears correctly */
+	margin-top: -20px;
+}
+
+.WACBusinessBarImage
+{
+	margin-left: 6px;
+	vertical-align: middle;
+}
+
+.AppRtl .WACBusinessBarImage
+{
+	margin-right: 6px;
+	margin-left: 0px;
+}
+
+.WACBusinessBarTitle
+{
+	font-weight: bold;
+	margin-left: 6px;
+	vertical-align: middle;
+}
+
+.AppRtl .WACBusinessBarTitle
+{
+	margin-left: 0px;
+	margin-right: 6px;
+}
+
+.WACBusinessBarBody
+{
+	margin-left: 14px;
+	vertical-align: middle;
+}
+
+.AppRtl .WACBusinessBarBody
+{
+	margin-left: 0px;
+	margin-right: 14px;
+}
+
+/* End of Business Bar and Notification Bar CSS */
+
+.clip16x16 img
+{
+	border: 0px;
+}
+
+.ClipartDialog
+{
+	width:636px;
+	float:left;
+}
+
+.AppRtl .ClipartDialog
+{
+	float:right;
+}
+
+.ClipartResultsPane
+{
+	width:412px;
+	float:left;
+}
+
+.AppRtl .ClipartResultsPane
+{
+	float:right;
+}
+
+.ClipartSearchHeader
+{
+	width:100%;
+	text-align:right;
+}
+
+.ClipartSearchInput
+{
+	vertical-align:top;
+	border-right-style:none;
+	width:auto;
+	border:solid 1px #bfc8cd;
+	border-right:0px;
+	float:left;
+	width:394px;
+	height:16px;
+}
+
+.AppRtl .ClipartSearchInput
+{
+	border:solid 1px #bfc8cd;
+	border-left:0px;
+	float:right;
+}
+
+.ClipartSearchButton
+{
+	/* copied from the current live site */
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	CURSOR: pointer;
+	PADDING-TOP: 0px;
+	border:solid 1px #bfc8cd;
+	border-left:0px;
+	height:16px;
+}
+
+.AppRtl .ClipartSearchButton
+{
+	border:solid 1px #bfc8cd;
+	border-right:0px;
+}
+
+.ClipartSearchResults
+{
+	height:304px;
+	width:400px;
+	overflow:auto;
+	overflow-x:hidden;
+	border: 1px solid #bfc8cd;
+	margin-top:6px;
+	margin-bottom:6px;
+	padding:6px 6px 6px 6px;
+}
+
+.ClipartImageContainer
+{
+	display:inline-block;
+	width:74px;
+	height:74px;
+	border: 1px solid Transparent;
+}
+
+.ClipartThumbImage
+{
+	margin:5px 0px 0px 5px;
+	border-width:0px;
+}
+
+.AppRtl .ClipartThumbImage
+{
+	margin:5px 5px 0px 0px;
+}
+
+.ClipartSelectedImage
+{
+	background-color:#FFAD46;
+	border: 1px solid #808080;
+}
+
+.ClipartCommunityText
+{
+	float:left;
+}
+
+.ClipartCommunityAttr
+{
+	float:left;
+	cursor:pointer;
+	text-decoration:none;
+	color:WindowText;
+}
+
+.ClipartCommunityAttrSelected
+{
+	float:left;
+	cursor:pointer;
+	font-weight:bold;
+	text-decoration:none;
+	color:WindowText;
+}
+
+.ClipartPreviewPane
+{
+	width:204px;
+	float:right;
+	font-size:0.9em;
+}
+
+.AppRtl .ClipartPreviewPane
+{
+	float:left;
+}
+
+.ClipartPreviewImage
+{
+	width:192px;
+	height:192px;
+	float:left;
+	margin:6px 0px 6px 0px;
+}
+
+.AppRtl .ClipartPreviewImage
+{
+	float:right;
+}
+
+.ClipartPreviewDetails
+{
+	float:left;
+	font-size:1.0em;
+}
+
+.AppRtl .ClipartPreviewDetails
+{
+	float:right;
+}
+
+.ClipartAttributeContainer
+{
+	width:204px;
+}
+
+.ClipartAttributeName
+{
+	float:left;
+	width:50%;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+.AppRtl .ClipartAttributeName
+{
+	float:right;
+}
+
+.ClipartAttributeValue
+{
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+.ClipartDisplayName
+{
+	width:100%;
+	float:left;
+	font-weight:bold;
+}
+
+.AppRtl .ClipartDisplayName
+{
+	float:right;
+}
+
+.ClipartDimensions
+{
+	margin:6px 0px 6px 0px;
+	width:204px;
+}
+
+#ParentCrossDomainFrame
+{
+	display:none;
+}
+
+/* Publish dialog styles */
+
+.PublishTextbox
+{
+	width:432px;
+}
+
+.PublishIntroDesc
+{
+	display:inline-block;
+	padding:0px 0px 0px 10px;
+	width:340px;
+}
+
+.PublishEmbedCodeDesc
+{
+	color:#838383;
+	font-style: italic;
+}
+
+
+.WACFrame, .WACDialogButtonNormal, .WACBusinessBarButton, .WACDialogButton
+{
+	font-family: "Segoe UI",Tahoma,Verdana,Sans-serif;
+	font-size: 8pt;
+}
+/* End publish dialog styles */
+
+/* PageStats CSS */
+#WACPageStatsButton
+{
+	width:56px;
+	height:40px;
+	background-color:#CCCCFF;
+	padding:20px;
+	position:absolute;
+	font-size: 2em;
+	cursor:pointer;
+	
+	/* rounded corner */
+	-moz-border-radius:15px; /* Firefox */
+	border-radius:15px;
+	/* shadow */
+	-moz-box-shadow: 5px 5px 5px #888888; /* Firefox */
+	-webkit-box-shadow: 5px 5px 5px #888888; /* Safari and Chrome */
+	box-shadow: 5px 5px 5px #888888;
+	/* transparency */
+	opacity:0.7;
+	filter:alpha(opacity=70); /* for IE */
+}
+/* End PageStats CSS */
+
+.WACCalloutOuter
+{
+	display: none;
+	position: fixed;
+	border: 1px solid #558ed5;
+	z-index: 997; /* 1 below dialog overlay */
+	background-color: #ffffff;
+	min-width: 250px;
+}
+
+.WACCalloutBeakContainer
+{
+	position: absolute;
+}
+
+.WACCalloutContent
+{
+	padding-left: 18px;
+	padding-right: 6px;
+	padding-bottom: 11px;
+	padding-top: 11px;
+	display: block;
+	overflow: hidden;
+}
+
+.WACCalloutCloseIcon
+{
+	padding: 1px;
+}
