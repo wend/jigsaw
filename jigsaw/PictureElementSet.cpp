@@ -1,4 +1,4 @@
-#include "StdAfx.h"
+#include "stdafx.h"
 #include "PictureElement.h"
 #include "PictureElementSet.h"
 
